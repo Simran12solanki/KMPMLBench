@@ -1,48 +1,33 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
+# KMPMLBench (Kotlin Multiplatform ML Benchmark)
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+A powerful, cross-platform benchmarking suite designed to evaluate the performance of various Deep Learning inference engines across **Mobile (Android & iOS)** and **Desktop (Windows, macOS, Linux)** using **Kotlin Multiplatform**.
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## 🎯 Motivation
+The ML landscape is fragmented. Developers often struggle to decide which engine to use: Should I stick with TFLite for ease of use, or integrate NCNN for raw performance?
 
-### Build and Run Android Application
+**KMPMLBench** provides a unified "Lab" to test these scenarios with identical models and logic, minimizing the "overhead" of platform-specific implementations.
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
+## 🚀 Supported Platforms & Engines
 
-### Build and Run Desktop (JVM) Application
+| Engine | Android | iOS | Desktop (JVM/Native) | Acceleration | Status |
+| :--- | :---: | :---: | :---: | :--- | :--- |
+| **ONNX Runtime** | 🏗️ | 🏗️ | 🏗️ | CoreML, DirectML, XNNPACK | In Progress |
+| **TensorFlow Lite** | 📅 | 📅 | 📅 | NNAPI, CoreML, GPU | Planned |
+| **NCNN** | 📅 | 📅 | 📅 | Vulkan, Metal | Planned |
+| **MNN** | 📅 | 📅 | 📅 | OpenCL, Vulkan, Metal | Planned |
+| **ExecuTorch** | 📅 | 📅 | 📅 | XNNPACK, CoreML | Planned |
 
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
+## 🧠 Benchmarking Tasks (Planned)
+While the project started with **Super-Resolution**, it is designed to be modular:
 
-### Build and Run iOS Application
+- [ ] **Super-Resolution:** ESPCN, FSRCNN, Real-ESRGAN.
+- [ ] **Image Classification:** MobileNetV3, EfficientNet (Planned).
+- [ ] **Object Detection:** YOLOv8-Nano (Planned).
+- [ ] **On-device LLM:** Gemma 2B / Phi-2 (Experimental via ExecuTorch).
 
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
-
----
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 📊 Performance Metrics (Planned)
+We measure more than just speed:
+1. **Inference Latency:** Average time per execution (ms).
+2. **Initialization Time:** Cold start vs. warm start (ms).
+3. **Memory Peak:** Maximum RAM/VRAM usage (MB).
+4. **Energy Consumption:** (Mobile only) Battery impact during prolonged tasks.
